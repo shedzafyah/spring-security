@@ -7,6 +7,16 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(){
-        return "This is the home page";
+        return "Welcome";
+    }
+
+    @GetMapping("/user")
+    public String user(){
+        return "Welcome User";
+    }
+
+    @GetMapping("/admin")
+    public String admin(){
+        return "Welcome Admin";
     }
 }
